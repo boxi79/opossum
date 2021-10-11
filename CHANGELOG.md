@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.2.2](https://www.github.com/nodeshift/opossum/compare/v6.2.1...v6.2.2) (2021-10-11)
+
+
+### Bug Fixes
+
+* upgrade @babel/core from 7.15.4 to 7.15.5 ([#604](https://www.github.com/nodeshift/opossum/issues/604)) ([709530d](https://www.github.com/nodeshift/opossum/commit/709530d204b8714491d69e34a765d081b262f855))
+* upgrade @babel/preset-env from 7.15.4 to 7.15.6 ([#605](https://www.github.com/nodeshift/opossum/issues/605)) ([eb1d279](https://www.github.com/nodeshift/opossum/commit/eb1d279b2d5dfe3ea440d15303179d62a0938d46))
+* upgrade eslint-plugin-import from 2.24.1 to 2.24.2 ([#602](https://www.github.com/nodeshift/opossum/issues/602)) ([940d3f6](https://www.github.com/nodeshift/opossum/commit/940d3f6b6fc9dc2f7dd2998e056d211209237ead))
+* upgrade multiple dependencies with Snyk ([#603](https://www.github.com/nodeshift/opossum/issues/603)) ([ed3fe4f](https://www.github.com/nodeshift/opossum/commit/ed3fe4fa429f3baf193a17f70953fda16b304730))
+* upgrade tape from 5.2.2 to 5.3.1 ([#599](https://www.github.com/nodeshift/opossum/issues/599)) ([54b2a64](https://www.github.com/nodeshift/opossum/commit/54b2a642cc67b1e8d24db80c4fbfc80d8204d915))
+* upgrade webpack-cli from 4.7.2 to 4.8.0 ([#600](https://www.github.com/nodeshift/opossum/issues/600)) ([09744be](https://www.github.com/nodeshift/opossum/commit/09744bedeadd2920a124ae6ea9bd94480f2e4ed1))
+
 ### [6.2.1](https://www.github.com/nodeshift/opossum/compare/v6.2.0...v6.2.1) (2021-08-23)
 
 
