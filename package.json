@@ -22,7 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nodeshift/opossum.git"
+    "url": "git://github.com/shopback/orca-opossum.git"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
   },
   "files": [
     "index.js",
@@ -31,9 +34,9 @@
     "doc/opossum.md"
   ],
   "bugs": {
-    "url": "https://github.com/nodeshift/opossum/issues"
+    "url": "https://github.com/shopback/orca-opossum/issues"
   },
-  "homepage": "https://nodeshift.dev/opossum",
+  "homepage": "https://github.com/shopback/orca-opossum",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
