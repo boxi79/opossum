@@ -1,3 +1,11 @@
+# In beginning
+
+Fork from [opposum](https://github.com/nodeshift/opossum)
+
+## publish
+  1. bump version in package.json
+  2. `npm publish --registry=http://nexus.infra.shopback.com:8081/repository/npm-internal/`
+
 # opossum
 
 ![Node.js CI](https://github.com/nodeshift/opossum/workflows/Node.js%20CI/badge.svg)
