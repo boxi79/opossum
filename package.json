@@ -1,6 +1,6 @@
 {
   "name": "orca-opossum",
-  "version": "0.0.8",
+  "version": "0.0.11",
   "author": "Red Hat, Inc.",
   "license": "Apache-2.0",
   "scripts": {
@@ -27,6 +27,7 @@
   "publishConfig": {
     "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
   },
+  "types": "./lib/index.d.ts",
   "files": [
     "index.js",
     "lib",
