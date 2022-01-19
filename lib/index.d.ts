@@ -233,7 +233,7 @@ declare namespace CircuitBreaker {
 
          /**
           * Configure the half-open transition stags.
-          * In half-open state, configure multiple ratio stages to determin how much percentage of traffic can be used to test cicruit.
+          * In half-open state, configure multiple ratio stages to determine how much percentage of traffic can be used to test circuit.
           * Default: [1]
           */
         halfOpenStages?: number[];
