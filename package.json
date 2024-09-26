@@ -1,6 +1,6 @@
 {
-  "name": "opossum",
-  "version": "6.2.1",
+  "name": "orca-opossum",
+  "version": "0.0.11",
   "author": "Red Hat, Inc.",
   "license": "Apache-2.0",
   "scripts": {
@@ -12,7 +12,9 @@
     "build:docs:html": "documentation build index.js -f html -o docs --config documentation.yml",
     "build:docs:markdown": "documentation build index.js -f md -o docs/opossum.md",
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "nyc tape test/*.js | tap-spec",
+    "test:tape": "nyc tape test/*.js | tap-spec",
+    "test:jest": "NODE_ENV=test jest test-jest/gradually-half-open.test.js --forceExit",
+    "test": "npm run test:tape && npm run test:jest",
     "test:headless": "node test/browser/webpack-test.js",
     "test:browser": "opener http://localhost:9007/test/browser/index.html && serve . -p 9007",
     "ci": "npm run build && npm run test && npm run test:headless",
@@ -22,8 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nodeshift/opossum.git"
+    "url": "git://github.com/shopback/orca-opossum.git"
   },
+  "publishConfig": {
+    "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
+  },
+  "types": "./lib/index.d.ts",
   "files": [
     "index.js",
     "lib",
@@ -31,9 +37,9 @@
     "doc/opossum.md"
   ],
   "bugs": {
-    "url": "https://github.com/nodeshift/opossum/issues"
+    "url": "https://github.com/shopback/orca-opossum/issues"
   },
-  "homepage": "https://nodeshift.dev/opossum",
+  "homepage": "https://github.com/shopback/orca-opossum",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
@@ -49,6 +55,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "husky": "^6.0.0",
+    "jest": "^27.4.7",
     "nyc": "~15.1.0",
     "opener": "1.5.2",
     "serve": "^11.3.2",
